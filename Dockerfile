@@ -1,7 +1,6 @@
 FROM nginx:1.9
 MAINTAINER Nick Janetakis <nick.janetakis@gmail.com>
 
-RUN pwd
 RUN rm /usr/share/nginx/html/*
 
 COPY configs/nginx.conf /etc/nginx/nginx.conf
