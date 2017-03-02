@@ -6,9 +6,9 @@ RUN rm /usr/share/nginx/html/*
 COPY configs/nginx.conf /etc/nginx/nginx.conf
 COPY configs/default.conf /etc/nginx/conf.d/default.conf
 
-COPY /tmp/sources/certs/productionexample.crt /etc/ssl/certs/productionexample.crt
-COPY /tmp/sources/certs/productionexample.key /etc/ssl/private/productionexample.key
-COPY /tmp/sources/certs/dhparam.pem /etc/ssl/private/dhparam.pem
+COPY //tmp/sources/certs/productionexample.crt /etc/ssl/certs/productionexample.crt
+COPY //tmp/sources/certs/productionexample.key /etc/ssl/private/productionexample.key
+COPY //tmp/sources/certs/dhparam.pem /etc/ssl/private/dhparam.pem
 
 COPY docker-entrypoint /
 RUN chmod +x /docker-entrypoint
